@@ -1,22 +1,134 @@
-# Foundational-for-data-analytics
-All my learnings in my journey to becoming a data analyst.
+# SQL & Excel Data Analytics Portfolio
+**University of Arizona | MS Information Sciences**
 
-This repo comprises of all the foundational learnings I am doing for the data analyst position. This repo is my central hub for all my learnings.
+---
 
-Welcome to my Foundational Data Analytics Repository! This repository serves as a comprehensive collection of my learnings in the field of data analytics. Here, you will find the resources, tutorials, and examples related to various tools and technologies that I am exploring, including SQL, Excel, Python, and Power BI.*
+## 📌 Overview
+This repository contains SQL and Excel work spanning structured skill-building exercises and two end-to-end portfolio projects on a real-world dataset. It documents my practical journey building core data analytics competencies in SQL querying, database management, and Excel-based data analysis.
 
-Data analytics is a crucial skill in today's data-driven world. This repository is designed to document my journey as I learn and apply various data analysis techniques and tools. Whether you are a beginner or an experienced analyst, I hope you find valuable insights and resources here.*
+---
 
-This repository includes resources and projects related to the following technologies:*
+## 📁 Repository Structure
+```
+SQL-Excel-Data-Analytics-Portfolio/
+│
+├── SQL/
+│   ├── Alex_1 through Alex_15        # SQL skill-building exercises
+│   ├── Portfolio 1/                   # Data Cleaning Project
+│   │   ├── Portfolio Project - Data Cleaning.sql
+│   │   ├── layoffs.csv
+│   │   └── Readme.md
+│   └── Portfolio 2/                   # Exploratory Data Analysis Project
+│       ├── Portfolio Project - EDA.sql
+│       └── Readme.md
+│
+├── Excel/
+│   ├── Alex_1 through Alex_6         # Excel skill-building exercises
+│   └── Readme.md
+│
+└── README.md
+```
 
-- **SQL**: Database querying and management.*
-- **Excel**: Data manipulation and visualization.*
-- **Python**: Data analysis and automation using libraries such as Pandas, NumPy, and Matplotlib.*
-- **Power BI**: Business intelligence and data visualization.*
+---
 
-Each technology has its own folder containing relevant resources, tutorials, and code along with comment.
-You can find example queries, scripts, and reports that demonstrate various data analysis techniques.
+## 🗄️ SQL Portfolio Projects
 
-We can do this Current and Future Students. Lets make a difference no matter the size of it. Small or Big.
+### Portfolio Project 1 — Data Cleaning
+**Dataset:** [Tech Layoffs 2022 (Kaggle)](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
 
-P.S: You might find that some of the above sentences look like they were written by a 4th grader and some by a english major. I will say this all the sentences ending with '*' are written by Not not ~yours truly and no I am not an English Major.
+A structured data cleaning pipeline applied to a real-world tech layoffs dataset using advanced MySQL techniques.
+
+**Key steps:**
+- Removed duplicate records using `ROW_NUMBER()` with `PARTITION BY` across all key columns
+- Standardized data formats — trimmed whitespace, unified industry names, converted date strings to proper DATE type
+- Handled NULL and blank values using conditional logic and table joins
+- Removed irrelevant rows and columns to produce a clean, analysis-ready staging table (`layoffs_staging2`)
+
+**SQL techniques used:**
+`CTEs` `ROW_NUMBER()` `PARTITION BY` `UPDATE` `ALTER TABLE` `STR_TO_DATE()` `TRIM()` `JOIN`
+
+---
+
+### Portfolio Project 2 — Exploratory Data Analysis (EDA)
+**Dataset:** Cleaned layoffs dataset (continuation of Portfolio 1)
+
+An exploratory analysis of the cleaned layoffs data to surface trends and insights across companies, industries, and time periods.
+
+**Key analyses:**
+- Identified companies with 100% workforce layoffs and ranked by funds raised
+- Aggregated total layoffs by company, industry, country, and year
+- Built a rolling monthly layoff total using window functions
+- Ranked top 5 companies by layoffs for each year using `DENSE_RANK()`
+
+**SQL techniques used:**
+`GROUP BY` `ORDER BY` `SUM()` `MAX()` `Window Functions` `DENSE_RANK()` `CTEs` `Rolling Aggregations`
+
+---
+
+## 📊 SQL Skill-Building Exercises
+15 structured SQL scripts covering the full spectrum of MySQL querying:
+
+| Script | Topic |
+|---|---|
+| Alex_1 | SELECT statements |
+| Alex_2 | WHERE, LIKE |
+| Alex_3 | GROUP BY, ORDER BY |
+| Alex_4 | WHERE vs HAVING |
+| Alex_5 | LIMIT, Aliasing |
+| Alex_6 | JOINs (INNER, LEFT, RIGHT) |
+| Alex_7 | UNIONS |
+| Alex_8 | String Functions |
+| Alex_9 | CASE Statements |
+| Alex_10 | Subqueries |
+| Alex_11 | Window Functions |
+| Alex_12 | CTEs (Common Table Expressions) |
+| Alex_13 | Temporary Tables |
+| Alex_14 | Stored Procedures |
+| Alex_15 | Triggers & Events |
+
+> All scripts include inline comments explaining concepts and logic for learning reference.
+
+---
+
+## 📈 Excel Skill-Building Exercises
+6 structured Excel workbooks covering core data analyst Excel skills:
+
+| File | Topic |
+|---|---|
+| Alex_1 | Pivot Tables & Sales Analysis |
+| Alex_2 | Formulas (SUM, AVERAGE, IF, etc.) |
+| Alex_3 | XLOOKUP |
+| Alex_4 | Conditional Formatting |
+| Alex_5 | Charts & Visualization |
+| Alex_6 | Data Cleaning in Excel |
+
+---
+
+## 🛠️ Tools & Technologies
+| Category | Tools |
+|---|---|
+| Database | MySQL |
+| Spreadsheet | Microsoft Excel |
+| SQL Concepts | CTEs, Window Functions, Stored Procedures, Triggers, Subqueries, Joins |
+| Excel Concepts | Pivot Tables, XLOOKUP, Conditional Formatting, Charts, Data Cleaning |
+
+---
+
+## 🚀 How to Run the SQL Projects
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/venkatesh16180/SQL-Excel-Data-Analytics-Portfolio.git
+   ```
+2. Import the dataset into MySQL:
+   - Open MySQL Workbench
+   - Import `layoffs.csv` into a new schema
+3. Run scripts in order:
+   - First: `Portfolio Project - Data Cleaning.sql`
+   - Then: `Portfolio Project - EDA.sql`
+
+---
+
+## 👤 Author
+**Venkateshwara Chowdary Tallapaneni**
+MS Information Sciences (Machine Learning) | University of Arizona
+[LinkedIn](www.linkedin.com/in/venkateshwara-chowdary-tallapaneni) | [GitHub](https://github.com/venkatesh16180)
