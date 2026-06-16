@@ -1,17 +1,31 @@
-# Dataset:
-https://www.kaggle.com/datasets/swaptr/layoffs-2022
+# Portfolio Project 1 — SQL Data Cleaning
+**Dataset: [Tech Layoffs 2022 — Kaggle](https://www.kaggle.com/datasets/swaptr/layoffs-2022)**
 
-# Data Cleaning Project
+## 📌 Overview
+A structured data cleaning pipeline applied to a real-world tech layoffs 
+dataset using advanced MySQL techniques. The goal was to transform a raw, 
+messy dataset into a clean, analysis-ready staging table.
 
-This repository contains SQL code for a data cleaning project focused on a dataset related to layoffs. The goal of this project is to clean and standardize the data to ensure its accuracy and usability for further analysis.
+## 🎯 Objectives
+1. Remove duplicate records
+2. Standardize data formats and values
+3. Handle NULL and blank values
+4. Remove irrelevant rows and columns
 
-## Project Overview
+## 🔑 Key Steps
+- Detected duplicates using `ROW_NUMBER()` with `PARTITION BY` across 
+  all key columns
+- Standardized industry names, trimmed whitespace, converted date 
+  strings to proper `DATE` type using `STR_TO_DATE()`
+- Handled NULLs using conditional `UPDATE` statements and self-joins
+- Produced clean output table: `layoffs_staging2`
 
-The dataset contains information about layoffs, including company names, locations, industries, total laid-off employees, percentages, dates, stages, countries, and funds raised. The cleaning process involves removing duplicates, standardizing data formats, handling null values, and ensuring data integrity.
+## 🛠️ SQL Techniques Used
+`CTEs` `ROW_NUMBER()` `PARTITION BY` `UPDATE` `ALTER TABLE` 
+`STR_TO_DATE()` `TRIM()` `JOIN` `IS NULL`
 
-## Objectives
-
-1. **Remove Duplicates**: Identify and eliminate duplicate records from the dataset.
-2. **Standardize Data**: Ensure consistency in data formats, such as trimming whitespace and standardizing industry names.
-3. **Handle Null Values**: Address missing or null values in critical fields.
-4. **Remove Unnecessary Columns/Rows**: Clean the dataset by removing irrelevant or empty rows and columns.
+## 📁 Files
+| File | Description |
+|---|---|
+| `Portfolio Project - Data Cleaning.sql` | Full data cleaning pipeline |
+| `layoffs.csv` | Source dataset |
