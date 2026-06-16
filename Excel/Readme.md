@@ -1,47 +1,25 @@
-# SQL — Skill Building & Portfolio Projects
-**Course: SQL/NoSQL Databases | University of Arizona**
+# Excel — Skill Building Exercises
+**Tools: Microsoft Excel**
 
 ## 📌 Overview
-This folder contains 15 structured SQL skill-building exercises covering 
-the full spectrum of MySQL querying, plus 2 end-to-end portfolio projects 
-on a real-world tech layoffs dataset.
+Six structured Excel workbooks covering core data analyst skills — 
+from pivot tables and lookups to data cleaning and visualization. 
+Each file includes practical examples with real sales and business data.
 
-## 📁 Structure
-SQL/
-
-│
-
-├── Alex_1 through Alex_15/     # Skill-building exercises
-
-├── Portfolio 1/                # Data Cleaning Project
-
-└── Portfolio 2/                # Exploratory Data Analysis Project
-
-## 🗄️ Skill-Building Exercises
-| Script | Topic |
-|---|---|
-| Alex_1 | SELECT statements |
-| Alex_2 | WHERE, LIKE |
-| Alex_3 | GROUP BY, ORDER BY |
-| Alex_4 | WHERE vs HAVING |
-| Alex_5 | LIMIT, Aliasing |
-| Alex_6 | JOINs (INNER, LEFT, RIGHT) |
-| Alex_7 | UNIONS |
-| Alex_8 | String Functions |
-| Alex_9 | CASE Statements |
-| Alex_10 | Subqueries |
-| Alex_11 | Window Functions |
-| Alex_12 | CTEs (Common Table Expressions) |
-| Alex_13 | Temporary Tables |
-| Alex_14 | Stored Procedures |
-| Alex_15 | Triggers & Events |
-
-> All scripts include inline comments explaining concepts and logic.
+## 📁 Files
+| File | Topic | Key Skills |
+|---|---|---|
+| Alex-1, Sales.csv, Pivot Table.xlsx | Pivot Tables | Summarizing sales data, grouping, filtering |
+| Alex-2, Formulas.xlsx | Formulas | SUM, AVERAGE, IF, nested formulas |
+| Alex-3, XLookUp.xlsx | XLOOKUP | Dynamic lookups across tables |
+| Alex-4, Conditional Formatting.xlsx | Conditional Formatting | Highlighting patterns, data bars, color scales |
+| Alex-5, Charts.xlsx | Charts & Visualization | Bar, line, pie charts for business reporting |
+| Alex-6, Data Cleaning.xlsx | Data Cleaning | Removing duplicates, trimming, standardizing |
 
 ## 🛠️ Tools
-`MySQL` `MySQL Workbench`
+`Microsoft Excel`
 
-## 📚 Additional Resources
-- [W3Schools SQL Tutorial](https://www.w3schools.com/sql/)
-- [SQLZoo](https://sqlzoo.net/)
-- [LeetCode SQL Problems](https://leetcode.com/problemset/all/?filters=tag%3ASQL)
+## 💡 Why Excel Matters
+Excel remains one of the most widely used tools in data analytics — 
+especially for business stakeholders. These exercises build practical 
+fluency in the features most commonly used in real analyst roles.
