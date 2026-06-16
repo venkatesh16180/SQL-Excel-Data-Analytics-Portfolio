@@ -1,17 +1,30 @@
-# About
-This is a continuation of the Previous Portfolio Project.
+# Portfolio Project 2 — Exploratory Data Analysis (EDA)
+**Dataset: Cleaned Layoffs Dataset (continuation of Portfolio 1)**
 
-# Exploratory Data Analysis (EDA) on Layoffs Dataset
+## 📌 Overview
+An exploratory data analysis on the cleaned tech layoffs dataset to 
+surface trends, patterns, and business insights across companies, 
+industries, countries, and time periods.
 
-This repository contains SQL code for conducting exploratory data analysis (EDA) on the cleaned layoffs dataset. The purpose of this analysis is to gain insights into the layoffs data, identify trends, and summarize key statistics.
+## 🎯 Objectives
+1. Calculate summary statistics on total and percentage layoffs
+2. Identify companies with complete (100%) workforce layoffs
+3. Analyze layoff trends over time — monthly and yearly
+4. Rank top companies by layoffs per year
 
-## Project Overview
+## 🔑 Key Analyses
+- Aggregated total layoffs by company, industry, and country
+- Built a **rolling monthly layoff total** using window functions
+- Ranked top 5 companies with highest layoffs per year using 
+  `DENSE_RANK()`
+- Identified full-closure companies (100% layoffs) ordered by 
+  funds raised
 
-Following the data cleaning project, this EDA aims to explore various aspects of the layoffs dataset, including total layoffs by company, industry, and date. The analysis will help in understanding the impact of layoffs across different sectors and time periods.
+## 🛠️ SQL Techniques Used
+`GROUP BY` `ORDER BY` `SUM()` `MAX()` `Window Functions` 
+`DENSE_RANK()` `CTEs` `Rolling Aggregations` `Subqueries`
 
-## Objectives
-
-1. **Summary Statistics**: Calculate maximum values for total layoffs and percentage of layoffs.
-2. **Trend Analysis**: Analyze layoffs over time, including monthly and yearly trends.
-3. **Group Analysis**: Summarize total layoffs by company, industry, and country.
-4. **Ranking**: Identify the top companies with the highest layoffs for each year.
+## 📁 Files
+| File | Description |
+|---|---|
+| `Portfolio Project - EDA.sql` | Full EDA pipeline |
