@@ -8,9 +8,13 @@ on a real-world tech layoffs dataset.
 
 ## 📁 Structure
 SQL/
+
 │
+
 ├── Alex_1 through Alex_15/     # Skill-building exercises
+
 ├── Portfolio 1/                # Data Cleaning Project
+
 └── Portfolio 2/                # Exploratory Data Analysis Project
 
 ## 🗄️ Skill-Building Exercises
